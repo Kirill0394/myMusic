@@ -35,11 +35,12 @@
     <option>ня-ня</option>
     <option>бе-бе</option>
     <option>(хехе)</option>
+    <option>среда</option>
 
 </select>
 
 
-<input type="text" id="input">
+<input type="text" id="input" class="custom-input">
 
 <script>
     const selectorElement = document.getElementById("selector");
@@ -50,7 +51,11 @@
 
         if (selectorValue === "(хехе)") {
             inputElement.value = "Вааай харашоо"
-        } else {
+        } else if(selectorValue === "среда") {
+            inputElement.value = "Соня харошая, красивая, приятная, ващще обожаю ❤️❤️"
+        }
+
+        else {
             inputElement.value = "Хохоо"
         }
     }
