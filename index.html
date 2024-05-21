@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>My music </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h2>Мои собственные произведения и аранжировки</h2>
+<h3> К. Чудаков, И. Степанов - Сюита "Сплетая культуры, Прорывая ткань времëн"</h3>
+<p> <a href="https://youtu.be/ZiYPCee-w3E?si=Vo1UZTuQd3VVBPVJ" target="_blank">J. Soule - Dragonborn (Skyrim OST)</a> </p>
+<p> <a href="https://youtu.be/k0a_nQ_3CUg?si=_oV7QF3M9lmLb0d6" target="_blank">К. Чудаков - Херувимская песнь </a> </p>
+<p> <a href="https://youtu.be/UOwsBuEPdq0?si=qlkyHjooQg78tLzc" target="_blank">Satyricon - Phoenix</a> </p>
+
+<h3>Rammstein cover</h3>
+<a href="https://youtu.be/VkPT1owDGGU?si=wHj16LMxSNRvIW50" target="_blank">Mein Herz Brennt</a>
+
+<h3>Обработка мелодии В. Гаврилина "Два Брата"</h3>
+<a href="https://youtu.be/Rc2TGH699LE?si=RhoX7FotBUpgDN7W" target="_blank">К. Чудаков - Былина</a>
+
+<h3>Guitar performance</h3>
+<a href="https://youtu.be/iB4K3L4ZITE?si=uJs-GVksiwPUtpOf" target="_blank"> Kotaro Oshio - Red Shoes Dance</a>
+
+<h3>Авторская инструментальная музыка</h3>
+
+<p> <a href="https://youtu.be/4x9M3LVrA28?si=z2vjr8_hoZHmkflH" target="_blank">К. Чудаков, М. Князев - Shanghai (quartet)</a> </p>
+<p> <a href="https://youtu.be/kMJcXcCtrlU?si=kkdytkOjTQd3LUGR" target="_blank">К. Чудаков, М. Князев - Shanghai (guitar v.)</a> </p>
+<a href="https://youtu.be/XmY07ZpTnPs?si=lySbkthCoSFjSDU9" target="_blank">К. Чудаков - Рондо d-moll "Утрата"</a>
+
+<h3>Guitar + piano performance</h3>
+<p> <a href="https://youtu.be/bdFO5YdpeT0?si=89Qhou-ygzaEO-ta" target="_blank">J. S. Bach - Invention in C-dur</a> </p>
+
+<label for="selector">Your honest reaction:</label>
+<select id="selector">
+    <option>ня-ня</option>
+    <option>бе-бе</option>
+    <option>(хехе)</option>
+
+</select>
+
+
+<input type="text" id="input">
+
+<script>
+    const selectorElement = document.getElementById("selector");
+    const inputElement = document.getElementById("input");
+
+    function updateInputValue() {
+        let selectorValue = selectorElement.value;
+
+        if (selectorValue === "(хехе)") {
+            inputElement.value = "Вааай харашоо"
+        } else {
+            inputElement.value = "Хохоо"
+        }
+    }
+
+    selectorElement.addEventListener("change", updateInputValue);
+
+    updateInputValue()
+
+</script>
+</body>
+</html>

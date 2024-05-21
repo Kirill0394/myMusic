@@ -1,0 +1,23 @@
+body {
+    background: lightslategrey;
+}
+
+a {
+    color: beige;
+}
+
+h2, h3, label {
+    color: white
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Конечное состояние - полностью видимый текст */
+    }
+}
+
+/* Применение класса fade-in ко всем заголовкам, параграфам и ссылкам */
+h1, h2, h3, h4, h5, h6, p, a, label, select, input {
+    opacity: 0; /* Изначально текст невидим */
+    animation: fadeIn 1s ease-in forwards; /* Анимация длительностью 2 секунды */
+}
